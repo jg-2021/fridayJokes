@@ -2,13 +2,13 @@ import Button from './Button'
 
 const Jokes = ({joke}) => {
     const onClick = () => {
-        console.log('click')
-    }
+    console.log('click')
+}
     return (
-        <header>
+        <div>
             <h1>{joke}</h1>
             <Button onClick = {onClick}/>
-        </header>
+        </div>
     )
 }
 
