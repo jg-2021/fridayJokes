@@ -25,10 +25,9 @@ const fetchJoke = async ()=>{
 }
   return (
     <div className="App">
-     
+      <header className="App-header">
        <Jokes joke = {joke}/>
-       
-      
+      </header>
     </div>
   );
   }
