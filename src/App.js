@@ -3,7 +3,7 @@ import React from 'react'
 import Jokes from './components/Jokes'
 // import {BrowserRouter as Router, Route} from "react-router-dom"
 import './App.css'
-import Button from './components/Button'
+
 
 function App() {
 const [joke, setJoke] = useState([])
