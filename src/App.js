@@ -3,6 +3,7 @@ import React from 'react'
 import Jokes from './components/Jokes'
 // import {BrowserRouter as Router, Route} from "react-router-dom"
 import './App.css'
+import Button from './components/Button'
 
 function App() {
 const [joke, setJoke] = useState([])
@@ -15,6 +16,8 @@ const [joke, setJoke] = useState([])
       getJoke()
 },[])
 
+
+
 const fetchJoke = async ()=>{
   const res = await fetch('https://cors-anywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json') 
   const data = await res.json()
@@ -22,9 +25,10 @@ const fetchJoke = async ()=>{
 }
   return (
     <div className="App">
-      <header className="App-header">
+     
        <Jokes joke = {joke}/>
-      </header>
+       
+      
     </div>
   );
   }
